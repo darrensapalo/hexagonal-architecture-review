@@ -1,5 +1,5 @@
-import { AccountProvider } from "./internal/component/accounts/provider";
-import { MyAccountService } from "./internal/component/accounts/service";
+import { AccountProvider } from "./internal/component/accounts-better-1/provider";
+import { MyAccountService } from "./internal/component/accounts-better-1/service";
 // Import stylesheets
 import "./style.css";
 
