@@ -1,10 +1,19 @@
-export type LoginRequest = {
-  // password is required for all log in requests
+export type GoogleUser = {
+  email: string;
   password: string;
-  // Support for dynamic structures that vary depending on
-  // infrastructure implementation
-  metadata: any;
 };
+
+export type FacebookUser = {
+  graphid: string;
+  password: string;
+}
+
+export type TwitterUser = {
+  twitterHandle: string;
+  password: string;
+}
+
+export type LoginRequest = GoogleUser | FacebookUser | TwitterUser;
 
 export type LoginResponse = {
   accessToken: string;
