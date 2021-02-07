@@ -10,5 +10,3 @@ appDiv.innerHTML = `<h1>TypeScript Starter!</h1>`;
 const provider = {} as AccountProvider;
 
 const AccountService = new MyAccountService(provider);
-
-AccountService.register("test");
